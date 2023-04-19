@@ -13,7 +13,7 @@ metadata:
     appstudio.openshift.io/component: dc-metro-map-qbtu
     pipelines.appstudio.openshift.io/type: build
   name: dc-metro-map-qbtu-on-push
-  namespace: karthik-jk-tenant
+  namespace: karthik
 spec:
   params:
   - name: dockerfile
