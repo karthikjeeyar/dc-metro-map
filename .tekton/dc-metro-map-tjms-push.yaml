@@ -286,6 +286,11 @@ spec:
         operator: notin
         values:
         - ""
+      volumes:
+      - name: snyk-secret
+        secret:
+          secretName: $(params.SNYK_SECRET)
+          optional: true   
       workspaces:
       - name: workspace
         workspace: workspace
