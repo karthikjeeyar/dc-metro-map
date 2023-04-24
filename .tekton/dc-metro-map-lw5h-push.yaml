@@ -344,6 +344,8 @@ spec:
                 HACBS_ERROR_OUTPUT=$(make_result_json -r ERROR -t "$note")
               fi
               echo "${HACBS_TEST_OUTPUT:-${HACBS_ERROR_OUTPUT}}" | tee $(results.HACBS_TEST_OUTPUT.path)
+        workspaces:
+        - name: workspace      
       when:
       - input: $(params.skip-checks)
         operator: in
