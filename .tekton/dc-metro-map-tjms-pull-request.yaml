@@ -27,6 +27,8 @@ spec:
     value: .
   - name: revision
     value: '{{revision}}'
+  - name: synk-secret
+    value: synk-secret
   pipelineSpec:
     finally:
     - name: show-summary
