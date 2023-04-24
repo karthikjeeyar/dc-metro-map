@@ -345,8 +345,7 @@ spec:
                 note="Task $(context.task.name) failed: For details, check Tekton task log."
                 HACBS_ERROR_OUTPUT=$(make_result_json -r ERROR -t "$note")
               fi
-              echo "${HACBS_TEST_OUTPUT:-${HACBS_ERROR_OUTPUT}}" | tee $(results.HACBS_TEST_OUTPUT.path)      
-
+              echo "${HACBS_TEST_OUTPUT:-${HACBS_ERROR_OUTPUT}}" | tee $(results.HACBS_TEST_OUTPUT.path)
       when:
       - input: $(params.skip-checks)
         operator: in
