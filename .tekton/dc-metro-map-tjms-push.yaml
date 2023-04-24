@@ -292,7 +292,7 @@ spec:
           secretName: $(params.SNYK_SECRET)
           optional: true   
       workspaces:
-      - name: synk-auth
+      - name: workspace
         workspace: workspace
     - name: clamav-scan
       params:
@@ -333,9 +333,6 @@ spec:
     - name: git-auth
       optional: true
   workspaces:
-  - name: synk-auth
-    secret:
-      secretName: synk-secret
   - name: workspace
     volumeClaimTemplate:
       metadata:
