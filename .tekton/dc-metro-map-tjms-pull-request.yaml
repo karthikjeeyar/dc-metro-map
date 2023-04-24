@@ -330,6 +330,8 @@ spec:
       optional: true
   workspaces:
   - name: workspace
+    secret:
+      secretName: synk-secret
     volumeClaimTemplate:
       metadata:
         creationTimestamp: null
