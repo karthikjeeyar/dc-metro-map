@@ -87,7 +87,7 @@ spec:
       description: Java build
       name: java
       type: string
-    - default: "snyk-secret"
+    - default: "snyk-token"
       description: Snyk Token Secret Name
       name: snyk-secret
       type: string
