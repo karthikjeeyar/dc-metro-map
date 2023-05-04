@@ -6,7 +6,7 @@ metadata:
   description: Stack with Node.js 14
   tags: ["Node.js", "Express", "ubi8"]
   projectType: "Node.js"
-  language: "Javascript"
+  language: "JavaScript"
   attributes:
     alpha.dockerimage-port: 3001
   provider: Red Hat
