@@ -5,7 +5,7 @@ metadata:
   displayName: Node.js Runtime
   description: Stack with Node.js 14
   tags: ["Node.js", "Express", "ubi8"]
-  projectType: "nodejs"
+  projectType: "Node.js"
   language: "Javascript"
   attributes:
     alpha.dockerimage-port: 3001
