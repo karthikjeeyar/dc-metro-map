@@ -183,7 +183,7 @@ spec:
                 valueFrom:
                   secretKeyRef:
                     name: crda-scan-secrets
-                    key: AUTH_TOKEN
+                    key: crda_auth_token
               - name: CONSENT_TELEMETRY
                 value: "false"
               - name: CRDA_KEY
@@ -195,7 +195,7 @@ spec:
                 valueFrom:
                   secretKeyRef:
                     name: crda-scan-secrets
-                    key: HOST
+                    key: crda_host
             script: |
               #!/usr/bin/env bash
               echo 'ready to scan'
