@@ -186,7 +186,7 @@ spec:
                     key: AUTH_TOKEN
               - name: CONSENT_TELEMETRY
                 value: "false"
-              - name: crda_key
+              - name: CRDA_KEY
                 valueFrom:
                   secretKeyRef:
                     name: crda-scan-secrets
