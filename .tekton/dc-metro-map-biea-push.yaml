@@ -165,6 +165,18 @@ spec:
       workspaces:
       - name: source
         workspace: workspace
+    - name: echo-message
+      taskSpec:
+        params:
+        - name: MESSAGE
+          type: string
+          default: "Hello World!"
+        steps:
+          - name: echo
+            image: ubuntu
+            script: |
+              #!/usr/bin/env bash
+              echo "Hello world!"
     - name: trusted-content
       taskSpec:
         results:
