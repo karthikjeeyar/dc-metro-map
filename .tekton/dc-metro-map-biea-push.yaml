@@ -176,7 +176,7 @@ spec:
           - name: source
         steps:
           - name: run-redhat-crda-scan-step
-            image: quay.io/lrangine/crda-maven:11.0
+            image: ghcr.io/fabric8-analytics/crda-python:3.7
             workingDir: "$(workspaces.source.path)"
             env:
               - name: AUTH_TOKEN
