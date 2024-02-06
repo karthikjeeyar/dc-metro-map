@@ -25,3 +25,4 @@ Under the terms of the [MIT][4].
 [3]: https://docs.openshift.org/latest/using_images/s2i_images/nodejs.html
 [4]: https://opensource.org/licenses/MIT
 [5]: http://redhatgov.io/workshops/openshift_101_dcmetromap/lab3-s2i/
+
